@@ -1,0 +1,269 @@
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+@media(max-width: 1440px) {
+
+    /* Set default styles for the page */
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: fill;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    /* Style the order summary container */
+    .order-summary {
+        height: 700px;
+        width: 450px;
+        margin-left: 20px;
+        margin-top: 45px;
+        background-color: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        display: block;
+        border: 1px;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: 20px;
+    }
+
+    /* Style the order summary title */
+    .title {
+        font-size: 32px;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        margin: 16px 16px;
+    }
+
+    /* Style the order summary description */
+    .description {
+        font-size: 16px;
+        font-weight: 500;
+        color: hsl(224, 23%, 55%);
+        margin: 16px 16px;
+        line-height: 24px;
+        width: 355px;
+        text-align: center;
+    }
+
+
+    /* style plan container */
+    .plan-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 355px;
+        margin: 50px;
+
+    }
+
+    .plan-details {
+        margin-right: 100px;
+
+    }
+
+    /* Style the order summary plan type */
+    .plan-type {
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(224, 23%, 55%);
+        margin: 0 0 8px;
+    }
+
+    /* Style the order summary plan price */
+    .plan-price {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--desaturated-blue);
+        margin: 0;
+    }
+
+    /* Style the change button */
+    .change-btn {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--bright-blue);
+        text-decoration: none;
+        margin-right: 16px;
+        text-decoration: underline;
+    }
+
+    /* Style the proceed button */
+    .proceed-btn {
+        display: block;
+        width: 355px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background-color: var(--bright-blue);
+        border: none;
+        padding: 16px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .proceed-btn:hover {
+        background-color: hsla(245, 85%, 60%, 70%);
+    }
+
+    /* Style the cancel button */
+    .cancel-btn {
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(224, 23%, 55%);
+        text-decoration: none;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+
+
+    .cancel-btn:hover {
+        color: black;
+    }
+}
+
+@media(max-width: 375px) {
+
+    /* Set default styles for the page */
+
+    html {
+        max-height: 100vh;
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 14px;
+        color: hsl(224, 23%, 55%);
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: fill;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 100vh;
+        height: 100%;
+    }
+
+    /* Style the order summary container */
+    .order-summary {
+        width: 330px;
+        height: 600px;
+        margin: 20px 0;
+        background-color: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        display: block;
+        border: 1px;
+        border-radius: 15px 15px 0 0;
+    }
+    }
+
+    img {
+        margin: 0;
+    }
+    
+
+    
+
+    /* style plan container */
+
+
+    .attribution {
+        display: none;
+    }
+
+
+    /* Style the order summary title */
+    .title {
+        font-size: 24px;
+        margin: 16px;
+    }
+
+    /* Style the order summary description */
+    .description {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 16px;
+        width: 85%;
+        text-align: center;
+    }
+
+    /* style plan container */
+    .plan-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: 16px;
+        padding: 10px 10px;
+    }
+.plan-details{
+    margin-left: 10px;
+}
+    /* Style the order summary plan type */
+    .plan-type {
+        color: #000;
+        margin: 8px 0;
+    }
+
+    /* Style the order summary plan price */
+    .plan-price {
+        margin: 0;
+    }
+
+    /* Style the change button */
+    .change-btn {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    /* Style the proceed button */
+    .proceed-btn {
+        width: 85%;
+        margin: 16px;
+    }
+
+    /* Style the cancel button */
+    .cancel-btn {
+        margin-right: 0;
+    }
