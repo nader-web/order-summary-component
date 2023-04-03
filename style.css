@@ -23,8 +23,8 @@
         font-size: 16px;
         color: hsl(224, 23%, 55%);
         background-image: url("images/pattern-background-desktop.svg");
+        background-color: var(--pale-blue);
         background-repeat: no-repeat;
-        background-size: fill;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,7 +41,7 @@
         margin-top: 45px;
         background-color: #fff;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        border-radius: 15px;
+        border-radius: 20px;
 
         display: flex;
         flex-direction: column;
@@ -95,7 +95,7 @@
     .plan-type {
         font-size: 16px;
         font-weight: 700;
-        color: hsl(224, 23%, 55%);
+        color: hsl(223, 64%, 6%);
         margin: 0 0 8px;
     }
 
@@ -167,6 +167,7 @@
         font-size: 14px;
         color: hsl(224, 23%, 55%);
         background-image: url("images/pattern-background-mobile.svg");
+        background-color: var(--very-pale-blue);
         background-repeat: no-repeat;
         background-size: fill;
         margin: 0;
@@ -196,17 +197,11 @@
         border: 1px;
         border-radius: 15px 15px 0 0;
     }
-    }
+
 
     img {
         margin: 0;
     }
-    
-
-    
-
-    /* style plan container */
-
 
     .attribution {
         display: none;
@@ -237,12 +232,15 @@
         margin: 16px;
         padding: 10px 10px;
     }
-.plan-details{
-    margin-left: 10px;
-}
+
+    .plan-details {
+        margin-left: 10px;
+    }
+
     /* Style the order summary plan type */
     .plan-type {
-        color: #000;
+        color: hsl(223, 64%, 6%);
+        
         margin: 8px 0;
     }
 
@@ -267,3 +265,4 @@
     .cancel-btn {
         margin-right: 0;
     }
+}
